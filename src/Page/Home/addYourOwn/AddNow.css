@@ -1,0 +1,37 @@
+.addNow-container{
+  background-color: #F7FDFF;
+}
+.addDiv{
+    border-radius: 8px;
+border: 1px solid var(--grey-light, #CED4DA);
+background: var(--grey-white, #FFF);
+padding: 40px;
+}
+.add-title{
+    color: var(--grey-darkest, #08090A);
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.add-details{
+    color: var(--grey-darkest, #08090A);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 30px; /* 166.667% */
+letter-spacing: 0.36px;
+margin: 34px 0;
+}
+.add-btn{
+      color: var(--primary-full, #8064A2);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px; /* 114.286% */
+background-color: transparent;
+border-color: #8064A2;
+}

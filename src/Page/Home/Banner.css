@@ -1,0 +1,59 @@
+.banner-main{
+ background-color: #F7F5F9;
+ /* margin-top: -45px; */
+}
+.banner-container{
+    padding-top: 50px;
+}
+.banner-text-and-image{
+  /* margin-top: -150px; */
+}
+.title{
+    color: var(--Black, #000);
+font-family: Poppins;
+font-size: 36px;
+font-style: italic;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.72px;
+}
+.hobby{
+    color: #0096C8;
+}
+.passion{
+    color: #8064A2;
+}
+
+.description{
+    color: var(--base-black, var(--Black, #000));
+/* Text sm/Light */
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 30px; /* 214.286% */
+letter-spacing: 0.28px;
+}
+
+
+
+/* responsive */
+@media screen and (max-width : 576px) {
+    .banner-details{
+      
+        text-align: center;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .vector-image{
+        display: none !important;
+    }
+    .vector-image-1{
+        width: 50%;
+    }
+    .vector-image-2{
+        width: 50%;
+    }
+    
+}

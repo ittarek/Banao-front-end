@@ -1,0 +1,42 @@
+.product-card{
+    border-radius: 8px;
+border: 1px solid  #CED4DA;
+background:  #FFF;
+padding: 30px 10px;
+}
+.first-card:hover{
+    background-color: #8064A2 !important;
+color: #FFF;
+}
+.second-card:hover{
+    background-color: #77933C !important;
+color: #FFF;
+}
+.third-card:hover{
+    background-color: #C0504D !important;
+color: #FFF;
+}
+.four-card:hover{
+    background-color: #0096C8 !important;
+color: #FFF;
+}
+.product-button{
+    color: var(--primary-full, #8064A2);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px; /* 114.286% */
+background-color: transparent;
+border-color: #8064A2;
+
+}
+.details{
+    color: var(--base-black, var(--Black, #000));
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin: 20px 0;
+}

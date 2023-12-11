@@ -1,0 +1,63 @@
+
+.hobby-title{
+    color: var(--base-black, var(--Black, #000));
+font-family: Poppins;
+font-size: 36px;
+font-style: italic;
+font-weight: 500;
+line-height: normal;
+}
+.hobby{
+    color: var(--primary-full, var(--Black, #8064A2));
+font-family: Poppins;
+font-size: 36px;
+font-style: italic;
+font-weight: 500;
+line-height: normal;
+}
+.community{
+    color: var(--Blue-1, var(--Black, #0096C8));
+font-family: Poppins;
+font-size: 36px;
+font-style: italic;
+font-weight: 500;
+line-height: normal;
+}
+.get-started-btn{
+    margin-top: 30px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+background: var(--primary-full, #8064A2);
+}
+.arrow{
+    fill:  #FFF;
+filter: drop-shadow(0px 8px 12px rgba(147, 156, 163, 0.12)) drop-shadow(0px 0px 2px rgba(147, 156, 163, 0.36));
+width: 40px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 100%;
+}
+.arrow-text{
+    color: var(--primary-full, #8064A2);
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 500;
+line-height: 12px; /* 120% */
+letter-spacing: 0.4px;
+}
+.hobby-image{
+    margin-top: 100px;
+}
+
+/* responsive */
+@media screen and (max-width:576px) {
+    .hobby-image-1 {
+        width: 50%;
+    }
+    .hobby-image-2 {
+        width: 50%;
+    }
+    
+}

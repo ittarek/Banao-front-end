@@ -1,0 +1,104 @@
+.navitems{
+
+
+  box-sizing: border-box;
+
+display: flex;
+justify-content: space-between;
+}
+nav a.active {
+  color: rgb(238, 192, 220);
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+nav a.active:hover {
+  background-color: rgb(102, 190, 30);
+  border-radius: 10px;
+  border: 2px solid green;
+
+  font-weight: bold;
+
+}
+.round{
+  border-radius: 50px;
+  width: 40px;
+}
+.logo {
+  width: 50px;
+}
+
+.search-box {
+  width: 100%;
+  margin-right: 400px;
+}
+/*  */
+
+.subscribe-form {
+  /* position: relative; */
+width: 250px;
+margin-right: 125px;
+}
+.subscribe-form input {
+
+  width: 50px !important;
+  height: 40px !important;
+}
+.subscribe-form button {
+  height: 40px !important;
+  position: relative;
+  left: 1px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0;
+  background-color: #8064A2;
+  border: none;
+    
+}
+.icon{
+color: #8064A2;
+
+}
+.explore_icon {
+  color: #8064A2;
+ margin-right: -15px;
+}
+.star_icon{
+color: #8064A2;
+ margin-right: -15px;
+
+}
+.signInBtn{
+    background-color: #8064A2;
+    border: none;
+}
+
+/* responsive */
+@media screen and (max-width: 576px) {
+  .subscribe-form{
+    display: none !important;
+  }
+  .nav-logo{
+    /* margin-top: -360px; */
+  }
+  .hambuger-icon {
+
+ color: #8064A2;
+  }
+  
+}
+
+/* .subscribe-form input:invalid {
+  animation: shake 300ms;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0.125rem);
+  }
+  75% {
+    transform: translate(-0.125rem);
+  }
+} */
