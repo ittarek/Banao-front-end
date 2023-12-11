@@ -12,8 +12,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link, NavLink } from 'react-router-dom';
-
-
+import logo from "/src/assets/HobbyCue Logo.png";
 
 const Navigation = () => {
 
@@ -23,7 +22,7 @@ const Navigation = () => {
         <div className=" ">
           <img
             className="w-75"
-            src="/src/assets/HobbyCue Logo.png"
+            src={logo}
             alt="Logo"
           />
         </div>

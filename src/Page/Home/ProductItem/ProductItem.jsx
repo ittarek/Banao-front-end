@@ -7,7 +7,9 @@ import location from "../../../assets/location.png"
 import pepole from "../../../assets/pepole.png"
 import Program from "../../../assets/programm.png";
 import  Product from "../../../assets/cart.png"
-
+import { useState } from "react";
+import peopoleHover from "../../../assets/Vector1-hover.png"
+import locationHover from "../../../assets/place-hover.png";
 const productData = [
   {
     id: 1,
@@ -15,6 +17,7 @@ const productData = [
     details:
       "Find a teacher, coach, or expert for your hobby interest in your locality.  Find a partner, teammate, accompanist or collaborator.",
     icons: `${pepole}`,
+    hoverIcon: `${peopoleHover}`,
     btn: "Connect",
   },
   {
@@ -23,6 +26,7 @@ const productData = [
     details:
       "Find a teacher, coach, or expert for your hobby interest in your locality.  Find a partner, teammate, accompanist or collaborator.",
     icons: `${location}`,
+    hoverIcon: `${locationHover}`,
     btn: "Meet Up",
   },
   {
@@ -44,6 +48,8 @@ const productData = [
 ];
 
 const ProductItem = () => {
+
+  const [isHovered, setIsHovered] = useState(false);
     return (
       <main className="container  row my-5 mx-auto ">
         {productData.map((data, index) => (
@@ -51,11 +57,21 @@ const ProductItem = () => {
             <Card
               className={`product-card ${index === 0 ? "first-card" : ""} ${
                 index === 1 ? "second-card" : ""
-              } ${index === 2 ? "third-card" : ""} ${index === 3 ? "four-card": ""}`}
+              } ${index === 2 ? "third-card" : ""} ${
+                index === 3 ? "four-card" : ""
+              }`}
             >
               <Card.Body>
-                <Card.Subtitle className="mb-2 d-flex align-items-center gap-4">
-                  <img src={data.icons} alt="icon" />
+                <Card.Subtitle
+                  className="mb-2 d-flex align-items-center gap-4"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
+                  <img
+                    src={isHovered ? data.hoverIcon : data.icons}
+                    alt="icon"
+                    className="icon"
+                  />
                   {data.title}
                 </Card.Subtitle>
                 <Card.Text className="details">{data.details}</Card.Text>

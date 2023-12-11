@@ -8,6 +8,10 @@ padding: 30px 10px;
     background-color: #8064A2 !important;
 color: #FFF;
 }
+.first-card:hover .icon button{
+
+color: #FFF;
+}
 .second-card:hover{
     background-color: #77933C !important;
 color: #FFF;
