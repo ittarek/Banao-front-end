@@ -1,158 +1,179 @@
-.singIn-container{
+.singIn-container {
   width: 410px;
   height: 434px;
 }
 
-.sign-in-btn{
-   color: #939CA3;
-   font-weight: bold;
-   border: none;
-}
-.sign-in-btn:active{
-   text-decoration: underline;
-   color: #8064A2;
-   font-weight: bold;
-}
-.join-in-btn{
+.sign-in-btn {
+  color: #939CA3;
   font-weight: bold;
-   color: #939CA3;
-   border: none;
+  border: none;
 }
-.join-in-btn:active{
-  text-decoration: underline;
-   color: #8064A2;
-   font-weight: bold;
+
+.sign-in-btn:focus {
+  color: #8064A2;
+  text-decoration: underline !important;
 }
-.join-forget-text{
+
+
+
+.join-in-btn {
+  font-weight: bold;
+  color: #939CA3;
+  border: none;
+}
+
+.join-in-btn:focus {
+  color: #8064A2;
+  text-decoration: underline !important;
+
+}
+
+
+
+.join-forget-text {
   margin-top: -20px;
 }
-.terms-policy{
+
+.terms-policy {
 
   color: var(--grey-darker, #6D747A);
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
-.social-button button{
-    background-color: #fff ;
+
+.social-button button {
+  background-color: #fff;
   color: #08090A;
-font-size: 14px;
-font-family: Poppins;
-font-weight: 600;
-line-height: 16px;
-word-wrap: break-word;
-width: 100%;
-margin-bottom: 16px;
-border-color: #8064A2;
-text-align: center
-;
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 16px;
+  word-wrap: break-word;
+  width: 100%;
+  margin-bottom: 16px;
+  border-color: #8064A2;
+  text-align: center;
 
 }
 
-.google-icon{
-margin-left: -95px;
-padding-right: 100px;
- 
-  
-}
-.google-text{
-margin-left: px;
-text-align: center;
+.google-icon {
+  margin-left: -95px;
+  padding-right: 100px;
 
-  
-}
-.facebook-icon{
-margin-left: -80px;
-padding-right: 100px;
- 
-  
-}
-.facebook-text{
-margin-left: 0px;
-text-align: center;
+
 }
 
-.connect-text::before{
+.google-text {
+  margin-left: px;
+  text-align: center;
+
+
+}
+
+.facebook-icon {
+  margin-left: -80px;
+  padding-right: 100px;
+
+
+}
+
+.facebook-text {
+  margin-left: 0px;
+  text-align: center;
+}
+
+.connect-text::before {
   content: "";
   border: 1px solid #CED4DA;
   display: inline-block;
-width: 149px;
-margin-right: 5px;
-margin-bottom: 3px;
+  width: 149px;
+  margin-right: 5px;
+  margin-bottom: 3px;
 
 }
-.connect-text-join::before{
+
+.connect-text-join::before {
   content: "";
   border: 1px solid #CED4DA;
   display: inline-block;
-width: 149px;
-margin-right: 5px;
+  width: 149px;
+  margin-right: 5px;
 
 
 }
-.connect-text::after{
+
+.connect-text::after {
   content: "";
   border: 1px solid #CED4DA;
   display: inline-block;
-width: 155px;
-margin-left: 5px;
-margin-bottom: 3px;
+  width: 155px;
+  margin-left: 5px;
+  margin-bottom: 3px;
 
 
 }
-.connect-text-join::after{
+
+.connect-text-join::after {
   content: "";
   border: 1px solid #CED4DA;
   display: inline-block;
-width: 155px;
-margin-left: 5px;
+  width: 155px;
+  margin-left: 5px;
 
 
 
 }
-.connect-text-join{
+
+.connect-text-join {
   /* margin-bottom: 50px !important; */
 }
-.password-eye{
+
+.password-eye {
   top: -31px;
   right: -370px;
 }
-.forget-lock-icon{
+
+.forget-lock-icon {
   color: #939CA3;
 }
-.continue-btn{
- background-color: #fff ;
+
+.continue-btn {
+  background-color: #fff;
   color: #08090A;
-font-size: 14px;
-font-family: Poppins;
-font-weight: 600;
-line-height: 16px;
-word-wrap: break-word;
-width: 100%;
-margin-bottom: 16px;
-border-color: #8064A2;
-text-align: center 
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 16px;
+  word-wrap: break-word;
+  width: 100%;
+  margin-bottom: 16px;
+  border-color: #8064A2;
+  text-align: center
 }
 
 /* responsive */
 @media screen and (max-width:576px) {
 
-  .toggle-link{
-  width: 150px;
+  .toggle-link {
+    width: 150px;
     margin: 0 auto;
     margin-bottom: 10px;
   }
-  .singIn-container{
+
+  .singIn-container {
     margin-top: 20px;
   }
-  .signIn-form{
+
+  .signIn-form {
     flex-direction: column-reverse !important;
     gap: 20px;
   }
-  .connect-text{
-margin-top: -10px;
+
+  .connect-text {
+    margin-top: -10px;
   }
-  
+
 }

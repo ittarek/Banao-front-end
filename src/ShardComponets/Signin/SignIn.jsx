@@ -9,7 +9,7 @@ import { useState } from "react";
 const SignIn = () => {
 const [showSignIn, setShowSign] = useState(true)
 const [showJoin, setShowJoin] = useState(false)
-
+const [show, setShow] = useState(false)
   const handleShowSign = () =>{
     
     if(showJoin === true){
@@ -139,8 +139,11 @@ setShowSign(true)
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 {/* <Form.Label>Password</Form.Label> */}
-                <Form.Control type="password" placeholder="Password" />
-                <span className="position-relative password-eye">
+                <Form.Control type={show ? "text" : "password"} placeholder="Password" />
+                <span
+                  onClick={() => setShow(true)}
+                  className="position-relative password-eye"
+                >
                   {" "}
                   <FaEye />
                 </span>
@@ -186,11 +189,11 @@ setShowSign(true)
             <Form.Group className="" controlId="formBasicPassword">
               {/* <Form.Label>Password</Form.Label> */}
               <Form.Control
-                type="password"
+                type={show ? "text" : "password"}
                 placeholder="Password"
                 className="-mb-5"
               />
-              <span className="position-relative password-eye">
+              <span onClick={()=> setShow(true)} className="position-relative password-eye">
                 {" "}
                 <FaEye />
               </span>
