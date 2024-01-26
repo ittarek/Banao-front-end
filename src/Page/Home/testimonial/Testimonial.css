@@ -1,62 +1,95 @@
-.testimonial-container{
+.testimonial-container {
     border-radius: 8px;
-background: var(--Purple-3, #F7F5F9);
-padding: 40px;
+    background: var(--Purple-3, #F7F5F9);
+    padding: 40px;
 
 }
-.test-title{
+
+.test-title {
     color: var(--grey-darkest, #08090A);
-font-family: Poppins;
-font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
-.test-details{
+
+.test-details {
     color: var(--grey-darker, #6D747A);
-font-family: Poppins;
-font-size: 18px;
-font-style: normal;
-font-weight: 300;
-line-height: 30px; /* 166.667% */
-letter-spacing: 0.36px;
-margin: 34px 0 ;
-}
-.play-btn{
-    border-radius: 8px;
-background-color:  #CCC1DA;
-width: 70%;
-
-}
-.girl-image{
-    background-color:  transparent;
-left: -50px;
-width: 80px;
-
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    /* 166.667% */
+    letter-spacing: 0.36px;
+    margin: 34px 0;
 }
 
-.girl-text{
+
+.mic-girl{
+    background-color: #CCC1DA;
+}
+.girl-image {
+    background-color:#CCC1DA !important;
+    left: -45px;
+    width: 75px;
+    border-radius: 50%;
+
+}
+
+.girl-text {
     color: var(--primary-full, #8064A2);
-font-family: Poppins;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 0.36px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.36px;
 }
-.mic{
-    left: -150px;
+
+.mic {
+    left: -145px;
     bottom: -20px;
 }
-.girl{
-    background-color:  #CCC1DA;
+
+.girl {
+    background-color: #CCC1DA !important;
+    color: #CCC1DA !important;
+    width: 65%;
 }
-.dance-text{
+
+.dance-text {
     color: var(--Blue-1, #0096C8);
-font-family: Poppins;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.28px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.play-btn {
+    border-radius: 8px;
+    background-color: #CCC1DA !important;
+    /* color: #CCC1DA; */
+    width: 70%;
+    padding: 5px;
+
+}
+
+@media screen and (max-width : 576px) {
+    .play-btn {
+ 
+        width: 100% !important;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20%;
+    }
+    .mic {
+        left: 270px;
+        bottom: -130px;
+    }
+
 }

@@ -25,30 +25,30 @@ const Testimonial = () => {
             recommend it.
           </p>
           {/* media */}
-          <div className="d-flex justify-content-between align-items-center ">
-            <div className="play-btn d-flex justify-content-between gap-5">
-              <audio
-                id="myPlayer"
-                controls
-                loop
-                className="my-auto w-75"
-                
-              >
-                <source src="./music/your_audio.mp3" type="audio/mpeg" />
-                Sorry - your browser does not support the audio element.
-              </audio>
-
-              <img className="position-relative girl-image" src={girl} alt="" />
-            </div>
-            <div className="d-flex gap-4 align-items-center">
-              <div>
-                <img className="position-relative mic" src={mic} alt="" />
-                <img className="girl" src={girl} alt="" />
+          <div
+            className="d-lg-flex justify-content-between align-items-center flex-row
+flex-row-reverse w-100"
+          >
+            <div
+              className="d-flex gap-4 align-items-center girl-text"
+            
+            >
+              <div className="">
+                <img className="position-relative mic " src={mic} alt="" />
+                <img className="girl " src={girl} alt="" />
               </div>
               <h6 className="girl-text">
                 Shubha Nagarajan <br />
                 <span className="dance-text">Classical Dancer</span>
               </h6>
+            </div>
+            <div className="play-btn d-flex justify-content-between ">
+              <audio id="myPlayer" controls loop className="my-auto w-75">
+                <source src="./music/your_audio.mp3" type="audio/mpeg" />
+                Sorry - your browser does not support the audio element.
+              </audio>
+
+              <img className="position-relative girl-image" src={girl} alt="" />
             </div>
           </div>
         </div>
