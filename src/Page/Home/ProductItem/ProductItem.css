@@ -7,22 +7,43 @@ padding: 30px 10px;
 .first-card:hover{
     background-color: #8064A2 !important;
 color: #FFF;
+transition: .3s;
+max-width: 600px !important;
 }
-.first-card:hover .icon button{
+.first-card:hover .product-button{
 
 color: #FFF;
+
 }
+
 .second-card:hover{
     background-color: #77933C !important;
 color: #FFF;
+transition: .3s;
+}
+.second-card:hover .product-button{
+
+color: #FFF;
+
 }
 .third-card:hover{
     background-color: #C0504D !important;
+color: #FFF;
+transition: .3s;
+}
+.third-card:hover .product-button{
+
 color: #FFF;
 }
 .four-card:hover{
     background-color: #0096C8 !important;
 color: #FFF;
+transition: .3s;
+}
+.four-card:hover .product-button{
+
+color: #FFF;
+
 }
 .product-button{
     color: var(--primary-full, #8064A2);

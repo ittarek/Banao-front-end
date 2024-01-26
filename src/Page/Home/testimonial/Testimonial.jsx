@@ -2,12 +2,13 @@
 import "./Testimonial.css"
 import girl from "../../../assets/girl.png";
 import mic from "../../../assets/mic.png";
-
+import coma from "../../../assets/coma.png";
 const Testimonial = () => {
     return (
       <main className="container testimonial-container my-5">
         <div className="testimonial-div">
-          <div>
+          <div className="d-flex gap-3 align-items-center">
+            <img className="" src={coma} alt="" />
             <h5 className="test-title">Testimonials</h5>
           </div>
           <p className="test-details">

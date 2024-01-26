@@ -10,6 +10,8 @@ import  Product from "../../../assets/cart.png"
 import { useState } from "react";
 import peopoleHover from "../../../assets/Vector1-hover.png"
 import locationHover from "../../../assets/place-hover.png";
+import ProductHover from "../../../assets/Product-hover.png"
+import ProgramHover from "../../../assets/Program-hover.png"
 const productData = [
   {
     id: 1,
@@ -35,6 +37,7 @@ const productData = [
     details:
       "Find a teacher, coach, or expert for your hobby interest in your locality.  Find a partner, teammate, accompanist or collaborator.",
     icons: `${Product}`,
+    hoverIcon: `${ProductHover}`,
     btn: "Get it",
   },
   {
@@ -43,6 +46,7 @@ const productData = [
     details:
       "Find a teacher, coach, or expert for your hobby interest in your locality.  Find a partner, teammate, accompanist or collaborator.",
     icons: `${Program}`,
+    hoverIcon: `${ProgramHover}`,
     btn: "Attend",
   },
 ];
@@ -55,6 +59,8 @@ const ProductItem = () => {
         {productData.map((data, index) => (
           <div key={data.id} className="col-lg-6 mx-auto mb-5">
             <Card
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
               className={`product-card ${index === 0 ? "first-card" : ""} ${
                 index === 1 ? "second-card" : ""
               } ${index === 2 ? "third-card" : ""} ${
@@ -62,11 +68,7 @@ const ProductItem = () => {
               }`}
             >
               <Card.Body>
-                <Card.Subtitle
-                  className="mb-2 d-flex align-items-center gap-4"
-                  onMouseEnter={() => setIsHovered(true)}
-                  onMouseLeave={() => setIsHovered(false)}
-                >
+                <Card.Subtitle className="mb-2 d-flex align-items-center gap-4">
                   <img
                     src={isHovered ? data.hoverIcon : data.icons}
                     alt="icon"
